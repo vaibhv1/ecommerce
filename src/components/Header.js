@@ -9,12 +9,14 @@ const Header = () => {
 
   return (
     <header className="header">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
       <nav className="nav">
         <div className="nav-left">
           <Link to="/" className="nav-link">Home</Link>
         </div>
         <h1>Shoopee</h1>
         <div className="nav-right">
+          <i class="fa fa-shopping-cart"></i>
           <Link to="/cart" className="nav-link cart-link">
             Cart ({cartItemCount})
           </Link>
