@@ -77,7 +77,7 @@ body {
   }
   
   .add-to-cart-button {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -91,7 +91,7 @@ body {
   }  
 
   .header {
-    background-color: blue;
+    background-color: rgb(131, 148, 45);
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
   }
@@ -206,3 +206,27 @@ body {
 }
 
 /* Other existing styles */
+
+.product-card .details-link {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.product-card .details-link:hover {
+  text-decoration: underline;
+}
+
+.product-card .add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-card .add-to-cart-button:hover {
+  background-color: #218838;
+}
