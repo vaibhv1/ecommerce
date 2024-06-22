@@ -1,24 +1,19 @@
-import axios from 'axios';
-
-const API_URL = 'https://fakestoreapi.com';
+const BASE_URL = 'https://fakestoreapi.com';
 
 export const fetchProducts = async () => {
-  try {
-    const response = await axios.get(`${API_URL}/products`);
-    console.log(response);
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching products:", error);
-    throw error;
-  }
+  const response = await fetch(`${BASE_URL}/products`);
+  const data = await response.json();
+  return data.map(product => ({
+    ...product,
+    price: parseFloat(product.price) // Ensure price is a number
+  }));
 };
 
 export const fetchProductById = async (id) => {
-  try {
-    const response = await axios.get(`${API_URL}/products/${id}`);
-    return response.data;
-  } catch (error) {
-    console.error(`Error fetching product with ID ${id}:`, error);
-    throw error;
-  }
+  const response = await fetch(`${BASE_URL}/products/${id}`);
+  const data = await response.json();
+  return {
+    ...data,
+    price: parseFloat(data.price) // Ensure price is a number
+  };
 };

@@ -180,3 +180,29 @@ body {
   .product-detail-info button:hover {
     background-color: #0056b3;
   }
+
+
+
+  /* Add these styles to the existing CSS */
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Other existing styles */
