@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(187, 185, 185);
   }
   
   .home-page, .product-page, .cart-page {
@@ -24,6 +25,7 @@ body {
     width: 250px;
     border-radius: 5px;
     text-align: center;
+    background-color: beige;
   }
   
   .product-card img, .cart-item img {
